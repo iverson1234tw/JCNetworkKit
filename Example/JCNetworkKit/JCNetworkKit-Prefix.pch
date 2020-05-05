@@ -13,4 +13,12 @@
 #ifdef __OBJC__
     @import UIKit;
     @import Foundation;
+    #import "MBProgressHUD.h"
+    #import "NSDictionary+BVJSONString.h"
 #endif
+
+#define JC_HostName    @"http://jcnetworkkit-api.herokuapp.com"
+//#define JC_HostName     @"http://127.0.0.1:5000"
+#define SCREEN_WIDTH          [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT         [UIScreen mainScreen].bounds.size.height
+#define KKW_WHITE       [UIColor colorWithRed:254.0/255.0 green:249.0/255.0 blue:247.0/255.0 alpha:1.0]

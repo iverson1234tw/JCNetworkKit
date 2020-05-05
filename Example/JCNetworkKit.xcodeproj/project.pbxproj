@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DC9106A8904B37A0D8231E6 /* Pods_JCNetworkKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2120D0BE9BB9BB103D2EC23 /* Pods_JCNetworkKit_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +23,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8B67275BCB2AE81473978D8D /* Pods_JCNetworkKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58164EB6ADC104466148E39 /* Pods_JCNetworkKit_Tests.framework */; };
-		9A144097DA1D34F87F854773 /* Pods_JCNetworkKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12AEED50D7C95F235D060E6 /* Pods_JCNetworkKit_Example.framework */; };
+		A771789FCBA6BA9FAC153898 /* Pods_JCNetworkKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A472E5827E61D0405E1CCB /* Pods_JCNetworkKit_Tests.framework */; };
+		BB4C426C24615AD800F574A0 /* NSDictionary+BVJSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C426B24615AD800F574A0 /* NSDictionary+BVJSONString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +62,14 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A12AEED50D7C95F235D060E6 /* Pods_JCNetworkKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCNetworkKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A58164EB6ADC104466148E39 /* Pods_JCNetworkKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCNetworkKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7F10BCB4654F3953EB4ECC0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		ACF99D54E8EA16FC45B0CB85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A7F10BCB4654F3953EB4ECC0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		ACF99D54E8EA16FC45B0CB85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BB4C426A24615AD800F574A0 /* NSDictionary+BVJSONString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BVJSONString.h"; sourceTree = "<group>"; };
+		BB4C426B24615AD800F574A0 /* NSDictionary+BVJSONString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BVJSONString.m"; sourceTree = "<group>"; };
+		C4A472E5827E61D0405E1CCB /* Pods_JCNetworkKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCNetworkKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2120D0BE9BB9BB103D2EC23 /* Pods_JCNetworkKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCNetworkKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB81AD0CBCAB61FA6C93B4DF /* Pods-JCNetworkKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCNetworkKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCNetworkKit_Tests/Pods-JCNetworkKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EDF8AA8A69D6296EEEDB46D9 /* JCNetworkKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JCNetworkKit.podspec; path = ../JCNetworkKit.podspec; sourceTree = "<group>"; };
+		EDF8AA8A69D6296EEEDB46D9 /* JCNetworkKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JCNetworkKit.podspec; path = ../JCNetworkKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +80,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				9A144097DA1D34F87F854773 /* Pods_JCNetworkKit_Example.framework in Frameworks */,
+				5DC9106A8904B37A0D8231E6 /* Pods_JCNetworkKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +91,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				8B67275BCB2AE81473978D8D /* Pods_JCNetworkKit_Tests.framework in Frameworks */,
+				A771789FCBA6BA9FAC153898 /* Pods_JCNetworkKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +137,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				A12AEED50D7C95F235D060E6 /* Pods_JCNetworkKit_Example.framework */,
-				A58164EB6ADC104466148E39 /* Pods_JCNetworkKit_Tests.framework */,
+				D2120D0BE9BB9BB103D2EC23 /* Pods_JCNetworkKit_Example.framework */,
+				C4A472E5827E61D0405E1CCB /* Pods_JCNetworkKit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +146,8 @@
 		6003F593195388D20070C39A /* Example for JCNetworkKit */ = {
 			isa = PBXGroup;
 			children = (
+				BB4C426A24615AD800F574A0 /* NSDictionary+BVJSONString.h */,
+				BB4C426B24615AD800F574A0 /* NSDictionary+BVJSONString.m */,
 				6003F59C195388D20070C39A /* JCAppDelegate.h */,
 				6003F59D195388D20070C39A /* JCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -207,7 +212,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				A9B37734C8CEE9708702CA26 /* [CP] Embed Pods Frameworks */,
+				9D5EAB3227B33C7A71E7AA28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +252,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Chen Hung-Wei";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = K2499D8WGX;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -257,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -330,18 +339,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A9B37734C8CEE9708702CA26 /* [CP] Embed Pods Frameworks */ = {
+		9D5EAB3227B33C7A71E7AA28 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JCNetworkKit_Example/Pods-JCNetworkKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/JCNetworkKit/JCNetworkKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JCNetworkKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -356,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* JCAppDelegate.m in Sources */,
+				BB4C426C24615AD800F574A0 /* NSDictionary+BVJSONString.m in Sources */,
 				6003F5A7195388D20070C39A /* JCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -485,13 +499,16 @@
 			baseConfigurationReference = 1CEAA48BC4E2EDA843106FA0 /* Pods-JCNetworkKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2499D8WGX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCNetworkKit/JCNetworkKit-Prefix.pch";
 				INFOPLIST_FILE = "JCNetworkKit/JCNetworkKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -501,13 +518,16 @@
 			baseConfigurationReference = 02B52C2DC87B601D22CBBD49 /* Pods-JCNetworkKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2499D8WGX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCNetworkKit/JCNetworkKit-Prefix.pch";
 				INFOPLIST_FILE = "JCNetworkKit/JCNetworkKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
