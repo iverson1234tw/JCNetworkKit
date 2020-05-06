@@ -38,7 +38,6 @@
     if (self) {
         
         self.requestSerializer = [AFJSONRequestSerializer serializer];
-        self.responseSerializer = [AFJSONResponseSerializer serializer];
         self.requestSerializer.timeoutInterval = 60;
         self.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringCacheData;
         self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/plain", @"text/javascript", @"text/json", @"text/html", @"text/xml", @"multipart/form-data", nil];
@@ -63,8 +62,8 @@
         
         NSError *error;
         NSMutableDictionary* details = [NSMutableDictionary dictionary];
-        [details setValue:[NSString stringWithFormat:@"請確認網路連線"] forKey:NSLocalizedDescriptionKey];
-        error = [NSError errorWithDomain:@"網路連線失敗" code:999 userInfo:details];
+        [details setValue:[NSString stringWithFormat:@"Check your internet"] forKey:NSLocalizedDescriptionKey];
+        error = [NSError errorWithDomain:@"Internet connection failed" code:999 userInfo:details];
         failure(error);
         
     } else {
@@ -84,8 +83,6 @@
                 
             case POST:{
                 
-                [self.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-                
                 [self POST:path parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                     success(responseObject);
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -93,6 +90,16 @@
                 }];
                 
                 break;
+            }
+                
+            case DELETE:{
+                
+                [self DELETE:path parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                    success(responseObject);
+                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                    failure(error);
+                }];
+                
             }
                 
             case FORM_DATA:{

@@ -22,9 +22,8 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
-    methodArray = [NSArray arrayWithObjects:@"GET", @"POST", nil];
+    methodArray = [NSArray arrayWithObjects:@"GET", @"POST", @"DELETE", nil];
     
     titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
     titleView.backgroundColor = KKW_WHITE;
@@ -121,8 +120,9 @@
         
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"Send" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
-            NSMutableDictionary *params = [NSMutableDictionary dictionary];
-            params[@"text"] = [NSString stringWithFormat:@"%@", alertVC.textFields[0].text];
+            NSDictionary *params = @{
+                                     @"name": [NSString stringWithFormat:@"%@", alertVC.textFields[0].text]
+                                     };
             
             MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             hud.detailsLabel.text = @"Loading";
