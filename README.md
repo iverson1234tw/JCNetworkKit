@@ -1,5 +1,4 @@
 # JCNetworkKit
-<<<<<<< HEAD
 
 [![CI Status](https://img.shields.io/travis/Chen Hung-Wei/JCNetworkKit.svg?style=flat)](https://travis-ci.org/Chen Hung-Wei/JCNetworkKit)
 [![Version](https://img.shields.io/cocoapods/v/JCNetworkKit.svg?style=flat)](https://cocoapods.org/pods/JCNetworkKit)
@@ -29,5 +28,5 @@ Chen Hung-Wei, reno65072013@gmail.com
 
 JCNetworkKit is available under the MIT license. See the LICENSE file for more info.
 =======
-針對網路套件進行封裝
+
 
