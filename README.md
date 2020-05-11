@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # JCNetworkKit
 
-[![CI Status](https://img.shields.io/travis/Chen Hung-Wei/JCNetworkKit.svg?style=flat)](https://travis-ci.org/Chen Hung-Wei/JCNetworkKit)
+[![CI Status](https://img.shields.io/travis/ChenHung-Wei/JCNetworkKit.svg?style=flat)](https://travis-ci.org/ChenHung-Wei/JCNetworkKit)
 [![Version](https://img.shields.io/cocoapods/v/JCNetworkKit.svg?style=flat)](https://cocoapods.org/pods/JCNetworkKit)
 [![License](https://img.shields.io/cocoapods/l/JCNetworkKit.svg?style=flat)](https://cocoapods.org/pods/JCNetworkKit)
 [![Platform](https://img.shields.io/cocoapods/p/JCNetworkKit.svg?style=flat)](https://cocoapods.org/pods/JCNetworkKit)
@@ -28,9 +28,3 @@ Chen Hung-Wei, reno65072013@gmail.com
 ## License
 
 JCNetworkKit is available under the MIT license. See the LICENSE file for more info.
-=======
-
-
-=======
-# JCNetworkKit
->>>>>>> 015167408830d884aec0b61e7921874ef8527d47
