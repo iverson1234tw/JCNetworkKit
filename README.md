@@ -3,7 +3,7 @@
 
 [![CI Status](https://img.shields.io/travis/ChenHung-Wei/JCNetworkKit.svg?style=flat)](https://travis-ci.org/ChenHung-Wei/JCNetworkKit)
 [![Version](https://img.shields.io/cocoapods/v/JCNetworkKit.svg?style=flat)](https://cocoapods.org/pods/JCNetworkKit)
-[![License](https://img.shields.io/cocoapods/l/JCNetworkKit.svg?style=flat)](https://cocoapods.org/pods/JCNetworkKit)
+[![License](https://img.shields.io/cocoapods/l/JCNetworkKit.svg?style=flat)](https://raw.githubusercontent.com/iverson1234tw/JCNetworkKit/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/JCNetworkKit.svg?style=flat)](https://cocoapods.org/pods/JCNetworkKit)
 
 ## Example
