@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JCNetworkKit
 
 [![CI Status](https://img.shields.io/travis/Chen Hung-Wei/JCNetworkKit.svg?style=flat)](https://travis-ci.org/Chen Hung-Wei/JCNetworkKit)
@@ -30,3 +31,6 @@ JCNetworkKit is available under the MIT license. See the LICENSE file for more i
 =======
 
 
+=======
+# JCNetworkKit
+>>>>>>> 015167408830d884aec0b61e7921874ef8527d47
