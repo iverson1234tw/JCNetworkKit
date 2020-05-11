@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: 'JCNetworkKit, an easy solution to handle your network. 透過針對AFNetworking進行二次封裝來方便網路連線的工具'
                        DESC
 
   s.homepage         = 'https://github.com/iverson1234tw/JCNetworkKit'
@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   s.dependency 'AFNetworking', '~> 3.0'
   s.dependency 'MBProgressHUD', '~> 1.1.0'
 end
