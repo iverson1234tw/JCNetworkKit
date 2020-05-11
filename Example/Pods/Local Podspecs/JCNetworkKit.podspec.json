@@ -4,9 +4,12 @@
   "summary": "JCNetworkKit, an easy solution to handle your network.",
   "description": "TODO: 'JCNetworkKit, an easy solution to handle your network. 透過針對AFNetworking進行二次封裝來方便網路連線的工具'",
   "homepage": "https://github.com/iverson1234tw/JCNetworkKit",
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
-    "Chen Hung-Wei": "reno65072013@gmail.com"
+    "Chen-Hung-Wei": "reno65072013@gmail.com"
   },
   "source": {
     "git": "https://github.com/iverson1234tw/JCNetworkKit.git",

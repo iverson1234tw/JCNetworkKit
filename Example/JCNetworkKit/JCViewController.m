@@ -153,39 +153,65 @@
             
         }];
         
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+        
         [alertVC addAction:action];
+        [alertVC addAction:cancel];
         [self presentViewController:alertVC animated:YES completion:nil];
         
     } else if (indexPath.row == 2) {
         
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.detailsLabel.text = @"Loading";
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"Delete Method" message:@"Input the object you want to delete" preferredStyle:UIAlertControllerStyleAlert];
+        [alertVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+            
+            textField.placeholder = @"Object";
+            textField.textColor = [UIColor blackColor];
+            textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+                        
+        }];
         
-        [[JCNetwork sharedManager] requestWithMethod:DELETE WithPath:[NSString stringWithFormat:@"%@/try-jcnetwork-api", JC_HostName] WithParams:@{} WithFile:@[] WithSuccessBlock:^(id responseObject) {
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"Delete" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
-            [hud hideAnimated:YES];
+            NSDictionary *params = @{
+                                     @"object": [NSString stringWithFormat:@"%@", alertVC.textFields[0].text]
+                                     };
             
-            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseObject
-                                                                 options:kNilOptions
-                                                                   error:nil];
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+            hud.detailsLabel.text = @"Loading";
             
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Success" message:[NSString stringWithFormat:@"%@", json[@"message"]] preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [[JCNetwork sharedManager] requestWithMethod:DELETE WithPath:[NSString stringWithFormat:@"%@/try-jcnetwork-api", JC_HostName] WithParams:params WithFile:@[] WithSuccessBlock:^(id responseObject) {
+                
+                [hud hideAnimated:YES];
+                
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Success" message:[NSString stringWithFormat:@"%@", responseObject[@"message"]] preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                
+                [alert addAction:ok];
+                [self presentViewController:alert animated:YES completion:nil];
+                
+            } WithFailurBlock:^(NSError *error) {
+                
+                [hud hideAnimated:YES];
+                
+                NSLog(@"%@", error.description);
+                
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:[NSString stringWithFormat:@"ErrorCode:%ld",error.code] preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                
+                [alert addAction:ok];
+                [self presentViewController:alert animated:YES completion:nil];
+                
+            }];
             
-            [alert addAction:ok];
-            [self presentViewController:alert animated:YES completion:nil];
-            
-        } WithFailurBlock:^(NSError *error) {
-            
-            [hud hideAnimated:YES];
-            
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:[NSString stringWithFormat:@"ErrorCode:%ld",error.code] preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-            
-            [alert addAction:ok];
-            [self presentViewController:alert animated:YES completion:nil];
             
         }];
+        
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+        
+        [alertVC addAction:action];
+        [alertVC addAction:cancel];
+        
+        [self presentViewController:alertVC animated:YES completion:nil];
         
     }
     

@@ -23,8 +23,8 @@ TODO: 'JCNetworkKit, an easy solution to handle your network. 透過針對AFNetw
 
   s.homepage         = 'https://github.com/iverson1234tw/JCNetworkKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = 'MIT'  # { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Chen Hung-Wei' => 'reno65072013@gmail.com' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Chen-Hung-Wei' => 'reno65072013@gmail.com' }
   s.source           = { :git => 'https://github.com/iverson1234tw/JCNetworkKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
