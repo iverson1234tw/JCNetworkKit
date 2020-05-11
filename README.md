@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # JCNetworkKit
 
 [![CI Status](https://img.shields.io/travis/ChenHung-Wei/JCNetworkKit.svg?style=flat)](https://travis-ci.org/ChenHung-Wei/JCNetworkKit)
